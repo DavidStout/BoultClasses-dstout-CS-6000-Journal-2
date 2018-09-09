@@ -28,16 +28,319 @@ attempted to get an overall picture of what I am reading by quickly scanning eac
 the key ideas, and really focusing on those ideas as well as the conclusion. I found that the timing 
 recommended was just about perfect to be able to answer the six C's and the three main questions. 
 \subsection{Critical read}
+The Critical read portion of this assignment will take me some further practice and knowledge. I believe that the 
+process is sound and was able to glean a lot of information from each paper, but my current level of knowledge is not 
+up to the task for all papers. Practice and further study is the only thing that will help in this area, as my 
+knowledge grows I believe that I will be better equipped to answer all the critical questions that I need to.
 
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=1.7]{universe}
-\caption{The Universe}
-\label{fig:universe}
-\end{figure}
+\section{Papers Read}
+\subsection{\underline{Measuring Neural Efficiency of Program Comprehension}\cite{siegmund_measuring_2017}}
+Raw Notes:
+\\
 
-\section{Conclusion}
+Is the problem carefully stated/formulated?
 
+-update theories of how programmers understand programs for more modern cognitive neuro-science methods
+\\
+
+Is it a meaningful/real problem?
+
+-the current theories rely on decades old information, neuro-science has been greatly improved upon since
+\\
+
+Is it the RIGHT problem (formulation vs description)?
+
+-Problem formulation is small in scope and could use expansion to bring significant results
+\\
+
+Can you make a list of assumptions, explicit and more importantly implicit about the problem?
+
+-data and theories outdated
+
+-science has improved thus needing more research
+
+-newer measurement tech allows for better analysis
+
+-fMRI is best tool to measure the brain activation (over EEG, PET, etc.)
+\\
+
+What well known problems are related or the same? 
+
+-foreign language comprehension might use a semantic/bottom-up approach
+
+-finding confusing code patterns in source code, likely the same semantic/bottom-up comprehension approach
+\\
+
+Are there simple solutions the authors do not seem to have considered?
+
+-other tools exist for measuring brain activity and locality
+\\
+
+What are the limitations of the solution (including limitations the authors might not have noticed or clearly 
+admitted)?
+
+-language comprehension and approach to cognition may be affected by cultural upbringing
+
+-participants were shown small snippets (20 lines) where larger snippets could have a negative effect on bottom-up 
+comprehension, due to user fatigue, over semantic cues
+\\
+
+Is the logic of the paper clear and justifiable, given the assumptions, or is there a flaw in the reasoning?
+
+-logic seems sound but the body of work is based entirely off of main author's previous work so there isn't much to 
+compare and contrast with
+\\
+
+Do all the pieces of their work fit together logically?
+
+-logical flow is sound
+
+If the authors present data, did they gather the right data to substantiate their argument, and did they appear to 
+gather it in the correct manner?
+
+-Specialized data gathering techniques require knowledge of fMRI and software specialized to imaging, but appears 
+sound (to observer unfamiliar with radiography)
+\\
+
+Did they have enough data to make a statistically sound decision?
+
+-only 11 participants
+
+-seems like participants were conditioned to snippets and then shown only 12 similar snippets each, possibly leading 
+the data where the researchers wanted it to go due to participant training
+
+-data measurement conditions were only taken into account regarding time not other parameters, ie. how the 
+participants would react to the confines of the fMRI and only being able to see the snippets from a mirror mounting.
+\\
+
+Did they interpret the data in a reasonable manner?
+
+- data seems to have a reasonable interpretation, scans show elevated activity in the areas of the brain similiar to 
+previous study
+
+-programming plans and language comprehension may be in the same neural circuit locations
+\\
+
+Would other data be more compelling?
+
+-a comparison of their fMRI data with EEG or PET data from the same participants
+\\
+
+Did they compare with actual state of the art performance?
+
+-comparison was done versus main author's previous body of work
+
+-atoms of confusion team did something a little similar using EEG machine, no comparison done
+\\
+
+Was the same data used for training and testing?
+
+-very similar to condition participants for quickness, but not the same data set
+\\
+
+What were the results? Did they do what they set out to do?
+
+-results show semantic-cues to have a better neuro-cognition result for program comprehension over bottom-up 
+
+-layout and beacons did not significantly affect comprehension (seemingly odd)
+\\
+
+On what dimension(s) did they advance the art?
+
+-Semantic Chunking theory was supported by their evidence
+
+-Neural Efficiency was shown to be better in expert-level participants over novice-level 
+\\
+
+Have the authors been cutting corners (intentionally or unintentionally)?
+
+-mention plenty of studies that utilize different measurement methods, but did not compare/contrast against any but 
+the main author's previous study
+\\
+
+Would results be reproducible? 
+
+-results were reproducible to main author's initial study, possible to reproduce results for this study but takes a 
+specialization in fMRI setup and analysis
+\\
+
+Are the claims modest enough?
+
+-claims that no evidence to support beacons and program layout affect comprehension tempered with idea of effect too 
+small to be measured with experiment setup
+\\
+
+Need further information on:
+
+-BrainVoyagerQX software to process data
+
+-Talairach brain?
+
+-Mention study conducted by Floyd et al using fMRI but no real comparisons drawn
+
+\subsection{\underline{Understanding Misunderstandings in Source Code}\cite{gopstein_understanding_2017}}
+
+Raw notes: 
+
+Is the problem carefully stated/formulated?
+
+-programmer intent conveyed to people is often subject to interpretation and misinterpretations confusing code patterns lead to bugs in code
+\\
+
+Is it a meaningful/real problem?
+
+-atoms can create bugs in production code
+
+-create faulty products, higher costs, and diminished productivity that is avoidable
+
+-problem has real-world applications and consequences
+\\
+
+Is it the RIGHT problem (formulation vs description)?
+
+-yes, the description of the problem is tempered with real-world examples
+\\
+
+Can you make a list of assumptions, explicit and more importantly implicit about the problem?
+
+-syntactic and semantic level bugs cost companies money and time, and are avoidable if the atoms are identifiable
+\\
+
+What well known problems are related or the same?
+
+-Program comprehension using beacons, layouts, and plans 
+
+-Cloudbleed
+
+-Apple "goto fail" SSL bug
+
+-Language comprehension 
+
+-IOCCC (International Obfuscated C Code Contest) - shows inherently confusing C code exists and is a problem
+\\
+
+Are there simple solutions the authors do not seem to have considered?
+
+-attacking the problem with the simplest of solutions, using the alternative non-confusing code to accomplish the same
+tasks as confusing code
+
+-more complex solutions seem to be the advent of dynamic languages, bring their own issues
+\\
+
+Limitations of the solution?
+
+-confusing code may not be cross cultural, what is confusing to americans may not be to other cultures and vice versa
+
+-solution only works if standards and syntaxes can be updated and most programmers get on board
+
+-no automated tool to find and replace atoms in production code
+\\
+
+Is the logic of the paper clear and justiﬁable, given the assumptions, or is there a ﬂaw in the reasoning?
+
+-logic is clear, examples of code bugs in production code that use identified atoms lend justification
+\\
+
+Do all the pieces of their work ﬁt together logically?
+
+-work flows together, with most work supporting each other
+\\
+
+If the authors present data, did they gather the right data to substantiate their argument, and did they appear to 
+gather it in the correct manner?
+
+-data was gathered between two models, confusing code and equivalently transformed non-confusing code
+
+-appears to have been gathered in single-blind testing with appropriate power
+\\
+
+Did they have enough data to make a statistically sound decision?
+
+-the two experiments were done with an appropriate power analysis done to ensure the data was statistically sound
+
+- experiments were randomized single-blind  
+\\
+
+Did they interpret the data in a reasonable manner?
+
+-data was adjusted for homogeneity and corrected for correlated data
+
+-statistical analysis using R package to report chi-squared stats deriving a p-value seems to be correct in method as 
+far as my knowledge of chi-squared can determine
+
+-effect size was determined using standard statistic analysis
+\\
+
+Would other data be more compelling? 
+
+-recruiting participants that are currently producing code may give better insight - participant level of expertise 
+not discussed
+
+-participants gave a self perceived notion of their C/C++ knowledge, contains bias
+\\
+
+Was the same data used for training and testing?
+
+-simple snippets used for training
+
+-transformed IOCCC submissions used for testing
+\\
+
+What were the results? Did they do what they set out to do?
+
+-results shown indicated that participants performed marginally better on clarified code
+
+-clarified code was less confusing to participants and 15/19 tested atom candidates showed a significant p-value
+\\
+
+On what dimension(s) did they advance the art?
+
+-identifying atoms is the beginning but implementation of the finding will truly advance
+
+-changing style guides and syntax handling is necessary
+
+-larger code project experiment showed that atoms had significant impact on correctness, seemingly in a compounding 
+effect
+\\
+
+Would results be reproducable? 
+
+-experiments are done in a manner that is reproducable and all tools are provided to the researcher
+\\
+
+Problematic experimental setup? 
+
+-participants were asked their perceived level of competency, not tested to find competency
+
+-atoms were identified soley in C language, possible to test other languages for cross language atoms
+\\
+
+Methodological misunderstanding? 
+
+-methodology is perceived as being cross platform, but may not be for certain languages
+\\
+
+Do the numbers add up? 
+
+-the statistical analysis provided seems sound and fairly implemented
+\\
+
+Are the generalizations valid? 
+
+-code patterns are generalized as being cross language issues when certain atoms are inherent to C, the premise of 
+confusing code is definitely something that crosses languages, but the patterns themselves will vary from language to 
+language most likely
+\\
+
+Are the claims modest enough?
+-threats to validity are sound, and the researchers seem to acknowledge that much more research is necessary for truly
+impacting results
+
+-a good starting point is provided in the paper for future research
+
+\clearpage
+\section{Conference Proceedings}
+E. Bodden and W. Schafer, Eds., 11TH JOINT MEETING OF THE EUROPEAN SOFTWARE ENGINEERING CONFERENCE AND THE ACM SIGSOFT SYMPOSIUM ON THE FOUNDATIONS OF SOFTWARE ENGINEERING, September 4-8 2017, Paderborn, Germany
 
 \nocite{*}
 
